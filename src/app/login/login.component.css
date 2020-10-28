@@ -1,0 +1,142 @@
+.logo{
+  margin: 0;
+  position: absolute;
+  width: 100px ;
+}
+
+.in{
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+.btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cont {
+  position: relative;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.forms-cont {
+  
+  width: 100%;
+
+  top: 0;
+  left: 0;
+  padding-top: 7rem;
+}
+
+
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+
+form.sign-in-form {
+  z-index: 2;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  background-color: #28242f;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #7a7a8c;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #7a7a8c;
+}
+
+.input-field input::placeholder {
+  color: #7a7a8c;
+  font-weight: 500;
+}
+
+.social-text {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.45rem;
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #343a40;
+  border-color: #343a40;
+}
+
+.btn {
+  width: 150px;
+  background-color: #28242f;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #2a2435;
+}
+

@@ -1,0 +1,43 @@
+
+
+<ng-template #anonymousUser>
+
+  <a class="nav-link" routerLink="/login">Login</a>
+
+</ng-template>
+
+
+
+
+<div ngbDropdown *ngIf="appUser; else anonymousUser" class="nav-item dropdown" >
+<a ngbDropdownToggle class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  {{ appUser.name }}
+</a>
+<div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <a class="dropdown-item" href="#">Profile</a>
+  <a class="dropdown-item" routerLink="/shopping-cart"><li><a routerLink="/products">Shop</a></li>
+  <div class="cart"><i routerLink="/shopping-cart" class="fa fa-shopping-cart"></i><span class="badge badge-danger badge-pill" *ngIf="cart$
+    | async as cart">{{ cart.totalItemsCount }}</span></div></a>
+  <a class="dropdown-item" *ngIf="appUser.isAdmin" routerLink="/admin/products">Manage-Products</a>
+  <a class="dropdown-item" (click)="logout()">Logout</a>
+</div>
+</div>
+
+<article class="nav">
+<img src="assets/img/nike.png" alt="" routerLink="/" class="logo">
+
+
+<ul class="middle">
+
+    <li><a routerLink="/products">Shop</a></li>
+    <div class="cart"><i routerLink="/shopping-cart" class="fa fa-shopping-cart"></i><span class="badge badge-danger badge-pill" *ngIf="cart$
+      | async as cart">{{ cart.totalItemsCount }}</span></div>
+</ul>
+
+
+
+
+
+
+</article>
+

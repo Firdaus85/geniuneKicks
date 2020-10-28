@@ -1,0 +1,25 @@
+
+<header class="card-header">
+  <p>Brand New</p>
+  <h2 >{{ product.title}}</h2>
+
+</header>
+<div class="card-kick">
+    <img src="{{product.imageUrl}}" alt="" class="kick">
+</div>
+
+<div class="card-details">
+
+  <div class="details-name"  >
+    <div class="details-name-prefix" >
+
+        {{product.description}}
+     </div>
+
+     {{product.price }}
+  </div>
+</div>
+<div class="tags">
+    <button
+    (click)="addToCart()">Add To Cart </button>
+</div>

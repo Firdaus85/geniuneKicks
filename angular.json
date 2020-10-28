@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Ishop": {
+    "geniuneKicks": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Ishop",
+            "outputPath": "dist/geniuneKicks",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -48,13 +48,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumWarning": "10kb",
+                  "maximumError": "20kb"
                 }
               ]
             }
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Ishop:build"
+            "browserTarget": "geniuneKicks:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Ishop:build:production"
+              "browserTarget": "geniuneKicks:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Ishop:build"
+            "browserTarget": "geniuneKicks:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Ishop:serve"
+            "devServerTarget": "geniuneKicks:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Ishop:serve:production"
+              "devServerTarget": "geniuneKicks:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Ishop"
+  "defaultProject": "geniuneKicks"
 }
